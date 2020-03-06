@@ -24,12 +24,9 @@ namespace AJV.Weather.WebApp.Controllers
 
 		public ActionResult Index()
 		{
-
-			//await Weather.GetWeatherByCoords(0, 0);
 			return View();
 		}
 
-		//[NonAction]
 		[HttpPost]
 		public async Task<ActionResult> LocalWeather(decimal latitude, decimal longitude)
 		{

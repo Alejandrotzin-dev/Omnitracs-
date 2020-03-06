@@ -24,7 +24,6 @@ namespace AJV.Weather.WebApp.Core
 				response.EnsureSuccessStatusCode();
 				var result = await response.Content.ReadAsStringAsync();
 				var data = JsonConvert.DeserializeObject<T>(result);
-				//return result;
 				return data;
 			}
 			catch(Exception ex)
