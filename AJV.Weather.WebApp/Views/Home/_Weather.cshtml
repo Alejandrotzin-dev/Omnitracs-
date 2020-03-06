@@ -1,0 +1,8 @@
+﻿@model AJV.Weather.WebApp.Models.WeatherResponse
+
+<h2>Weather in <span>@Model.Name</span></h2>
+<img src="@Url.Content("http://openweathermap.org/img/wn/" + Model.Weather.FirstOrDefault().Icon + "@2x.png")" />
+<p><span>@Model.Weather.FirstOrDefault().Description</span></p>
+<p>Temperature:<span>@Model.Main.Temp</span> °</p>
+<p>Temperature Max:<span>@Model.Main.TempMax</span> °</p>
+<p>Temperature Min:<span>@Model.Main.TempMin</span> °</p>
